@@ -14,7 +14,7 @@ const proof = {
   checks: [],
 };
 try {
-  await page.goto("http://127.0.0.1:4190/seo-migration-review-demo/");
+  await page.goto("http://127.0.0.1:4179/seo-migration-review-demo/");
   await page.waitForFunction(
     () => !document.querySelector("#example").disabled,
   );

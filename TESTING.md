@@ -1,10 +1,10 @@
 # Recette exécutée — édition 1.0.0
 
-3 octobre 2026. Livraison locale ; aucune exécution GitHub Actions ou publication distante revendiquée. Les preuves sont conservées sous `evidence/`. Les captures sont produites avec des données fictives.
+3 octobre 2026. Les preuves de recette locale sont conservées sous `evidence/`. Les exécutions distantes et leur artefact de recette sont consultables dans [GitHub Actions](https://github.com/edikkaweb/seo-migration-review-demo/actions). Une réussite du build seule ne prouve pas le déploiement. Les captures utilisent des données fictives.
 
 ## Environnement
 
-Node.js 22.12.0, TypeScript 6.0.3, esbuild 0.25.12, Papa Parse 5.5.3, Playwright 1.63.0, axe-core via @axe-core/playwright 4.10.2. macOS ; modèle CPU et version OS dans `evidence/benchmark.json`. Tests Chromium sur Google Chrome 154.0.8037.93, profils temporaires séparés des profils utilisateur.
+Node.js 22.12.0, TypeScript 6.0.3, esbuild 0.25.12, Papa Parse 5.5.3, Playwright 1.63.0, axe-core via @axe-core/playwright 4.10.2. macOS ; modèle CPU et version OS dans `evidence/benchmark.json`. Tests sur Google Chrome 154.0.8037.93 et Firefox Playwright 155.0, profils temporaires séparés des profils utilisateur.
 
 ## Moteur et construction
 
@@ -14,9 +14,9 @@ Une première passe avait 15/17 réussites : les inventaires monocolonnes étaie
 
 Le HTML initial est généré par le moteur et les mêmes fixtures que l’interaction ; aucun chiffre pédagogique n’est codé manuellement dans les composants. `build-manifest.json` contient octets et SHA-256 des fichiers livrables (hors lui-même). Les deux builds finaux sont comparés par empreinte. Le générateur ne lit aucun fichier utilisateur.
 
-## Navigateur de production
+## Navigateurs sur le build de production
 
-`npm run preview` puis `npm run test:browser`. Chromium a exécuté les parcours suivants sur `dist/` servi sous `/seo-migration-review-demo/` :
+`npm run preview` puis `npm run test:browser`. Chromium et Firefox ont exécuté chacun les onze groupes de contrôles suivants sur `dist/` servi sous `/seo-migration-review-demo/` :
 
 - Exemple 86/14/31, tri décroissant des URL à résoudre ; état complété ; corpus anomalies.
 - Filtres sans changement des indicateurs, import personnel, mapping explicite d’en-têtes non reconnus, confirmation, analyse, trois téléchargements réellement sauvegardés et vérifiés.
@@ -44,6 +44,6 @@ Dans Chromium : import + mapping/confirmations automatisés + analyse des deux f
 
 ## Vérifications non acquises
 
-Firefox 155.0 est installé, mais l’accès local a échoué dès la navigation (interruption vers la même URL puis attente expirée). WebKit Playwright installé n’a pas atteint le serveur local dans le délai de diagnostic. Une tentative native Safari n’a pas répondu. Aucun succès sur un second moteur n’est revendiqué. Le script conserve les deux moteurs et la CI est configurée pour les exécuter sur Linux ; elle n’a pas encore tourné à distance. `evidence/browser-first-pass.json` conserve le premier résultat défavorable.
+Le premier essai Firefox et la première exécution CI ont échoué avant de charger la page : le port d’aperçu 4190 est réservé au protocole Sieve et bloqué par Firefox ([source Mozilla](https://bugzilla.mozilla.org/show_bug.cgi?id=1927546)). L’aperçu utilise maintenant 4179, sans modifier les protections du navigateur. La recette complète Chromium + Firefox passe localement ; `evidence/browser.json` conserve ce résultat, `evidence/browser-first-pass.json` le résultat initial défavorable. Les deux moteurs sont également exigés en CI avant tout déploiement. WebKit et Safari natif n’ont pas été validés.
 
-Pas de session VoiceOver ou NVDA ; pas d’étude avec participants ; pas de téléphone physique. Le véritable zoom navigateur 200 % n’a pas été vérifié ; les largeurs CSS étroites sont vérifiées séparément et ne sont pas présentées comme un test de zoom. Aucun test de production, classement, trafic ou validité HTTP des URL importées. La disponibilité publique reste à vérifier après autorisation et publication.
+Pas de session VoiceOver ou NVDA ; pas d’étude avec participants ; pas de téléphone physique. Le véritable zoom navigateur 200 % n’a pas été vérifié ; les largeurs CSS étroites sont vérifiées séparément et ne sont pas présentées comme un test de zoom. Aucun test de classement, trafic ou validité HTTP des URL importées. Les contrôles de publication (ressources HTTP et empreintes) sont distincts de ces contrôles fonctionnels.

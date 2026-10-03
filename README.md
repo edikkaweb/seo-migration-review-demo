@@ -16,7 +16,7 @@ npm run verify
 npm run preview
 ```
 
-Ouvrir `http://127.0.0.1:4190/seo-migration-review-demo/`. L’aperçu sert exclusivement `dist/` sous le sous-répertoire prévu pour GitHub Pages. `PORT=4191 npm run preview` permet un autre port. Une ouverture directe en `file://` ne charge pas les workers de manière fiable : utiliser l’aperçu HTTP.
+Ouvrir `http://127.0.0.1:4179/seo-migration-review-demo/`. L’aperçu sert exclusivement `dist/` sous le sous-répertoire prévu pour GitHub Pages. `PORT=4191 npm run preview` permet un autre port. Une ouverture directe en `file://` ne charge pas les workers de manière fiable : utiliser l’aperçu HTTP.
 
 - **Ouvrir l’exemple** : résultats calculés et preuves.
 - **Mes fichiers CSV** : importer, vérifier séparateur et correspondance des colonnes, préciser les bases des URL relatives, confirmer puis analyser.

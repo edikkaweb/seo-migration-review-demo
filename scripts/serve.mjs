@@ -2,7 +2,7 @@ import http from "node:http";
 import fs from "node:fs/promises";
 import path from "node:path";
 const root = path.resolve("dist"),
-  port = Number(process.env.PORT || 4190),
+  port = Number(process.env.PORT || 4179),
   prefix = "/seo-migration-review-demo/";
 const mime = {
   ".html": "text/html; charset=utf-8",

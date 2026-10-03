@@ -5,7 +5,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import os from "node:os";
 const base =
-  process.env.TEST_URL || "http://127.0.0.1:4190/seo-migration-review-demo/";
+  process.env.TEST_URL || "http://127.0.0.1:4179/seo-migration-review-demo/";
 const evidence = {
   date: new Date().toISOString(),
   os: os.platform() + " " + os.release(),
@@ -41,10 +41,7 @@ for (const [name, type, options] of [
     });
     const p = await ctx.newPage();
     p.on("pageerror", (e) => receipt.errors.push(e.message));
-    await p.goto(base, { waitUntil: "domcontentloaded" }).catch(async (e) => {
-      if (!e.message.includes("interrupted by another navigation")) throw e;
-      await p.waitForURL(base);
-    });
+    await p.goto(base, { waitUntil: "domcontentloaded" });
     await p.locator("#example").waitFor({ state: "visible" });
     await p.waitForFunction(() => !document.querySelector("#example").disabled);
     await p.screenshot({

@@ -27,7 +27,7 @@ jobs:
           SERVER_PID=$!
           trap 'kill "$SERVER_PID"' EXIT
           for attempt in 1 2 3 4 5; do
-            if curl --fail http://127.0.0.1:4190/seo-migration-review-demo/ > /dev/null; then break; fi
+            if curl --fail http://127.0.0.1:4179/seo-migration-review-demo/ > /dev/null; then break; fi
             sleep 1
           done
           npm run test:browser
