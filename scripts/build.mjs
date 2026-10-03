@@ -99,7 +99,7 @@ await fs.copyFile(
   "node_modules/papaparse/LICENSE",
   "dist/docs/PAPA-PARSE-LICENSE.txt",
 );
-await fs.writeFile("dist/.nojekyll", "");
+// Actions publishes dist directly; no Jekyll marker is needed or uploaded.
 const files = async (dir) => {
   const arr = [];
   for (const e of await fs.readdir(dir, { withFileTypes: true })) {
