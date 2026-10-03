@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-03T16:08:30.367Z",
+  "node": "v22.12.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "os": "25.3.0",
+  "cpu": "Apple M4 Max",
+  "rowsPerFile": 50000,
+  "bytes": {
+    "plan": 3677836,
+    "inventory": 1588900,
+    "annotated": 61103972,
+    "unresolved": 225
+  },
+  "milliseconds": {
+    "parse": 29.076375,
+    "analyze": 326.633333,
+    "exports": 345.018833,
+    "total": 700.728541
+  },
+  "route": {
+    "kind": "external",
+    "terminal": "https://volume.example/p50000",
+    "hops": 50000,
+    "group": "external:https://volume.example/p50000",
+    "distance": 50000,
+    "cycleLength": 0
+  },
+  "metrics": {
+    "calculable": true,
+    "reason": "",
+    "total": 50000,
+    "documented": 50000,
+    "unresolved": 0,
+    "coverage": 100,
+    "knownClicks": 50000,
+    "unresolvedClicks": 0,
+    "unresolvedShare": 0,
+    "missingClicks": 0,
+    "invalidClicks": 0,
+    "clicksSafe": true,
+    "categories": {
+      "keep": {
+        "count": 0,
+        "clicks": 0
+      },
+      "redirect": {
+        "count": 50000,
+        "clicks": 50000
+      },
+      "consolidate": {
+        "count": 0,
+        "clicks": 0
+      },
+      "remove": {
+        "count": 0,
+        "clicks": 0
+      },
+      "unresolved": {
+        "count": 0,
+        "clicks": 0
+      }
+    }
+  },
+  "heapUsed": 540370728
+}

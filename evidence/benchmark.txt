@@ -1,0 +1,26 @@
+
+> @edikka/seo-migration-review-demo@1.0.0 benchmark
+> npm run compile && node tests/benchmark.mjs
+
+
+> @edikka/seo-migration-review-demo@1.0.0 compile
+> node scripts/compile.mjs
+
+{
+  "rows": 50000,
+  "timings": {
+    "parse": 29.076375,
+    "analyze": 326.633333,
+    "exports": 345.018833,
+    "total": 700.728541
+  },
+  "route": {
+    "kind": "external",
+    "terminal": "https://volume.example/p50000",
+    "hops": 50000,
+    "group": "external:https://volume.example/p50000",
+    "distance": 50000,
+    "cycleLength": 0
+  },
+  "heap": 540370728
+}

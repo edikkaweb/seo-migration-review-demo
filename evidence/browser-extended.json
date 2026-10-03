@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-03T16:06:49.801Z",
+  "browser": "154.0.8037.93",
+  "checks": [
+    "keyboard skip, example activation, result heading focus",
+    "relative bases preview and plan-only analysis",
+    "duplicate inventory blocks percentages",
+    "invalid encoding and stale report",
+    "zero denominator and unknown clicks",
+    "parsing error retains preview and partial analysis",
+    "browser 50k+50k, 50k-hop chain, interface heartbeat",
+    "pagination 50 000 rows"
+  ],
+  "importAxe": {
+    "violations": [],
+    "incomplete": []
+  },
+  "volume": {
+    "recordsPerFile": 50000,
+    "elapsedIncludingAutomationMs": 682.7273749999999,
+    "heartbeat": {
+      "ticks": 30,
+      "maxGap": 164.29999995231628
+    }
+  },
+  "result": "passed"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@edikka/seo-migration-review-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "compile": "node scripts/compile.mjs",
+    "fixtures": "npm run compile && node scripts/generate.mjs",
+    "build": "npm run compile && node scripts/build.mjs",
+    "test": "npm run compile && node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "benchmark": "npm run compile && node tests/benchmark.mjs",
+    "preview": "node scripts/serve.mjs",
+    "verify": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "papaparse": "5.5.3"
+  },
+  "devDependencies": {
+    "@types/papaparse": "5.3.16",
+    "typescript": "6.0.3",
+    "esbuild": "0.25.12",
+    "playwright": "1.63.0",
+    "@axe-core/playwright": "4.10.2"
+  }
+}

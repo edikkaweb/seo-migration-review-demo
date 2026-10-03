@@ -1,0 +1,2 @@
+# Preserve the generated UTF-8/BOM and CRLF CSV bytes used by the fixtures.
+*.csv -text whitespace=cr-at-eol

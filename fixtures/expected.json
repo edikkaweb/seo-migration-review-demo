@@ -1,0 +1,9 @@
+{
+  "total": 100,
+  "knownClicks": 10000,
+  "documented": 86,
+  "unresolved": 14,
+  "coverage": 86,
+  "unresolvedClicks": 3100,
+  "unresolvedShare": 31
+}

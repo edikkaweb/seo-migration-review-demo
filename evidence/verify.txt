@@ -1,0 +1,150 @@
+
+> @edikka/seo-migration-review-demo@1.0.0 verify
+> npm run typecheck && npm test && npm run build
+
+
+> @edikka/seo-migration-review-demo@1.0.0 typecheck
+> tsc --noEmit
+
+
+> @edikka/seo-migration-review-demo@1.0.0 test
+> npm run compile && node --test tests/*.test.mjs
+
+
+> @edikka/seo-migration-review-demo@1.0.0 compile
+> node scripts/compile.mjs
+
+TAP version 13
+# Subtest: corpus exact et complété, couverture distincte des anomalies
+ok 1 - corpus exact et complété, couverture distincte des anomalies
+  ---
+  duration_ms: 5.317541
+  ...
+# Subtest: keep/remove conservés ; vide jamais remove
+ok 2 - keep/remove conservés ; vide jamais remove
+  ---
+  duration_ms: 0.575625
+  ...
+# Subtest: deux colonnes : inférence, ambiguïté et auto explicite
+ok 3 - deux colonnes : inférence, ambiguïté et auto explicite
+  ---
+  duration_ms: 0.366042
+  ...
+# Subtest: boucles, prédécesseurs, chaînes et cible supprimée
+ok 4 - boucles, prédécesseurs, chaînes et cible supprimée
+  ---
+  duration_ms: 0.639333
+  ...
+# Subtest: 50 000 sauts itératifs sans terminal HTTP inventé
+ok 5 - 50 000 sauts itératifs sans terminal HTTP inventé
+  ---
+  duration_ms: 372.602542
+  ...
+# Subtest: absence clics, zéro, invalide, entier groupé et sécurité numérique
+ok 6 - absence clics, zéro, invalide, entier groupé et sécurité numérique
+  ---
+  duration_ms: 0.784167
+  ...
+# Subtest: doublons inventaire et URL invalides suspendent les pourcentages
+ok 7 - doublons inventaire et URL invalides suspendent les pourcentages
+  ---
+  duration_ms: 0.454
+  ...
+# Subtest: clics manquants : pourcentage sur clics connus uniquement
+ok 8 - clics manquants : pourcentage sur clics connus uniquement
+  ---
+  duration_ms: 0.198958
+  ...
+# Subtest: CSV BOM, multiligne, CRLF, quotes, séparateurs et homonymes
+ok 9 - CSV BOM, multiligne, CRLF, quotes, séparateurs et homonymes
+  ---
+  duration_ms: 0.624333
+  ...
+# Subtest: parsing incorrect garde la prévisualisation et bloque les indicateurs
+ok 10 - parsing incorrect garde la prévisualisation et bloque les indicateurs
+  ---
+  duration_ms: 0.445583
+  ...
+# Subtest: URL conservatrices, bases distinctes et transformations traçables
+ok 11 - URL conservatrices, bases distinctes et transformations traçables
+  ---
+  duration_ms: 0.757708
+  ...
+# Subtest: URL dangereuses ou sérialisation ambiguë refusées
+ok 12 - URL dangereuses ou sérialisation ambiguë refusées
+  ---
+  duration_ms: 0.05175
+  ...
+# Subtest: statuts, cibles incompatibles, décision inconnue
+ok 13 - statuts, cibles incompatibles, décision inconnue
+  ---
+  duration_ms: 0.120458
+  ...
+# Subtest: variantes candidates ne gonflent pas la couverture
+ok 14 - variantes candidates ne gonflent pas la couverture
+  ---
+  duration_ms: 0.116125
+  ...
+# Subtest: exports conservent lignes/colonnes et exportent les absences
+ok 15 - exports conservent lignes/colonnes et exportent les absences
+  ---
+  duration_ms: 4.401084
+  ...
+# Subtest: neutralisation des formules et contrôles sans mutation des originaux
+ok 16 - neutralisation des formules et contrôles sans mutation des originaux
+  ---
+  duration_ms: 0.193875
+  ...
+# Subtest: résultats déterministes
+ok 17 - résultats déterministes
+  ---
+  duration_ms: 3.547708
+  ...
+# Subtest: formules précédées d’espaces Unicode et caractères invisibles
+ok 18 - formules précédées d’espaces Unicode et caractères invisibles
+  ---
+  duration_ms: 0.081208
+  ...
+# Subtest: colonnes supplémentaires préservées sans collision
+ok 19 - colonnes supplémentaires préservées sans collision
+  ---
+  duration_ms: 0.227875
+  ...
+# Subtest: plusieurs défauts restent rattachés à une même ligne
+ok 20 - plusieurs défauts restent rattachés à une même ligne
+  ---
+  duration_ms: 0.09625
+  ...
+# Subtest: somme non sûre non exportée comme dénominateur
+ok 21 - somme non sûre non exportée comme dénominateur
+  ---
+  duration_ms: 0.130166
+  ...
+# Subtest: limites de volume et mapping dupliqué refusés explicitement
+ok 22 - limites de volume et mapping dupliqué refusés explicitement
+  ---
+  duration_ms: 9.739625
+  ...
+# Subtest: suppression, conflit et lignes répétées restent intacts à l’export
+ok 23 - suppression, conflit et lignes répétées restent intacts à l’export
+  ---
+  duration_ms: 1.138583
+  ...
+1..23
+# tests 23
+# suites 0
+# pass 23
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 479.9725
+
+> @edikka/seo-migration-review-demo@1.0.0 build
+> npm run compile && node scripts/build.mjs
+
+
+> @edikka/seo-migration-review-demo@1.0.0 compile
+> node scripts/compile.mjs
+
+Build : 19 fichiers publics, exemple 86 % / 31 %.

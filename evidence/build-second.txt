@@ -1,0 +1,9 @@
+
+> @edikka/seo-migration-review-demo@1.0.0 build
+> npm run compile && node scripts/build.mjs
+
+
+> @edikka/seo-migration-review-demo@1.0.0 compile
+> node scripts/compile.mjs
+
+Build : 19 fichiers publics, exemple 86 % / 31 %.

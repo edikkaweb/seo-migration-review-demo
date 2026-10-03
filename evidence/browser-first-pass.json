@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-03T15:38:50.431Z",
+  "os": "darwin 25.3.0",
+  "node": "v22.12.0",
+  "url": "http://127.0.0.1:4190/seo-migration-review-demo/",
+  "engines": [
+    {
+      "name": "chromium",
+      "checks": [
+        "example 86/14/31, priority order",
+        "filters independent of totals; completed corpus",
+        "anomaly corpus",
+        "missing plan error summary focused",
+        "online sentinel import, mapping, analysis, 3 exports, no injected HTML or persistent storage",
+        "changed input invalidates report",
+        "offline import, mapping, analysis, 3 exports, no persistent storage",
+        "reset clears inputs/report without request",
+        "390 and 320 CSS px no document overflow",
+        "reduced motion path",
+        "no-JS initial numbers and 6 downloads under subdirectory"
+      ],
+      "errors": [],
+      "network": [],
+      "screenshots": [
+        "chromium-initial.png",
+        "chromium-results.png"
+      ],
+      "version": "154.0.8037.93",
+      "axe": {
+        "violations": [],
+        "incomplete": [],
+        "passes": 28
+      },
+      "result": "passed"
+    },
+    {
+      "name": "firefox",
+      "checks": [],
+      "errors": [],
+      "network": [],
+      "screenshots": [],
+      "version": "155.0",
+      "result": "failed",
+      "failure": "page.goto: Navigation to \"http://127.0.0.1:4190/seo-migration-review-demo/\" is interrupted by another navigation to \"http://127.0.0.1:4190/seo-migration-review-demo/\"\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:4190/seo-migration-review-demo/\", waiting until \"load\"\u001b[22m\n\n    at [project]/tests/browser.mjs:8:275"
+    }
+  ]
+}

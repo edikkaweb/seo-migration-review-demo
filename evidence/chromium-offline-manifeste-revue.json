@@ -1,0 +1,32 @@
+{
+  "application": "1.0.0",
+  "method": "1.0.0",
+  "exportedAt": "2026-10-03T16:12:01.491Z",
+  "metadata": {
+    "period": "non renseignés",
+    "property": "non renseignés",
+    "filters": "non renseignés",
+    "source": "non renseignés"
+  },
+  "settings": {
+    "sourceBase": "",
+    "targetBase": "",
+    "homepage": "",
+    "threshold": 5
+  },
+  "files": {
+    "plan": "plan-sentinelle.csv",
+    "inventory": "inventaire-sentinelle.csv"
+  },
+  "denominators": {
+    "validUniqueUrls": 3,
+    "calculable": true,
+    "knownClicks": 100,
+    "missingClicks": 0,
+    "invalidClicks": 0
+  },
+  "limits": [
+    "Plan déclaré uniquement ; aucun HTTP ni trafic prédit.",
+    "Données du projet : conserver les rapports avec précaution."
+  ]
+}

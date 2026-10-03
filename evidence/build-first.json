@@ -1,0 +1,96 @@
+{
+  "application": "1.0.0",
+  "method": "1.0.0",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "app.js",
+      "bytes": 13302,
+      "sha256": "82e3cd9194238544c5ae1f4bc8fb44fdad72af1278c59534ae2c2feda1e9414e"
+    },
+    {
+      "path": "docs/CHANGELOG.md",
+      "bytes": 771,
+      "sha256": "4658e96e01ba2c7c6b2642ce2dfef8ee1a137e463e90903fe5dab3019359d7dd"
+    },
+    {
+      "path": "docs/LICENSE",
+      "bytes": 1082,
+      "sha256": "76f7c7bdc66d8a1a9b74d5e80347672d9e974e0ce7937b6773ed6601496f1cf0"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "bytes": 11622,
+      "sha256": "8f87661451337ab9d567ee40ea69b2b55065fb58d4f050719e7800da5e14b166"
+    },
+    {
+      "path": "docs/PAPA-PARSE-LICENSE.txt",
+      "bytes": 1079,
+      "sha256": "99aa68e4b42758b09828a46515f70369e5463458ab7a990189f641af2b8d9b4e"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 4393,
+      "sha256": "b2aad2284a7f5f24910f3ac880c7ae180483433a9a42d2a1ec11dee44d7f0c43"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "bytes": 6126,
+      "sha256": "3e6d69926024a8bd9fa964bb844336a66b92a84653e114e7619ad02694eace5d"
+    },
+    {
+      "path": "docs/THIRD_PARTY_NOTICES.md",
+      "bytes": 869,
+      "sha256": "7f526e6fd461d82f6f09f383880952745b224cd36c5a3c873dc8c05b7b7eca1d"
+    },
+    {
+      "path": "fixtures/expected.json",
+      "bytes": 154,
+      "sha256": "7bfadbf5ea42bd38a72c973f10a834d8899bc68e06c2036e50deb6c85d8e1816"
+    },
+    {
+      "path": "fixtures/inventaire-anomalies.csv",
+      "bytes": 348,
+      "sha256": "00742d72ad461d449e2a8a2b68594b2f718334f125d2c3189eea25c38cdffd45"
+    },
+    {
+      "path": "fixtures/inventaire-exemple.csv",
+      "bytes": 4854,
+      "sha256": "797d6baeebe54996ffa716c0b633071813a1eeb046cef3625792f4ffde78d02b"
+    },
+    {
+      "path": "fixtures/plan-anomalies.csv",
+      "bytes": 933,
+      "sha256": "d32152323a4d818b89be12ccf588235e56de5a71be765e0f4084640ac3306d21"
+    },
+    {
+      "path": "fixtures/plan-complete.csv",
+      "bytes": 9720,
+      "sha256": "68b88c9395029190c2881b51dd3c3d50359f94b444b0895e1b51fbedf85833ab"
+    },
+    {
+      "path": "fixtures/plan-exemple.csv",
+      "bytes": 8390,
+      "sha256": "e83cc2084726835cb30ae6773a5d3dd4d946011ae3a097451e77283ff2e037bc"
+    },
+    {
+      "path": "index.html",
+      "bytes": 22321,
+      "sha256": "c87872948f42ad68c99892d7bd01c830c0431db40392bf865bce3b887f24f962"
+    },
+    {
+      "path": "style.css",
+      "bytes": 8197,
+      "sha256": "8d606314ad35e78e8b8a1b1707f07ba99c2adce668f9e53ba188590606e85ab6"
+    },
+    {
+      "path": "worker.js",
+      "bytes": 49600,
+      "sha256": "58e9f558ee0b6596fdad10f99226e4faa24720aab4dbabfa43979e409e9d4a9c"
+    }
+  ]
+}
