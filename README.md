@@ -41,6 +41,12 @@ Installer les moteurs de test si nécessaire : `npx playwright install chromium 
 
 ## Architecture et confidentialité
 
+### Matrices Edikka FR et EN
+
+Les CSV de l’Insight peuvent être importés sans renommer les colonnes. `HTTP attendu` / `Expected HTTP` est prioritaire sur le statut d’avancement. Les décisions `Conserver`, `Rediriger 301` / `301 redirect`, `Consolider`, `404`, `410` et `À analyser` / `Investigate` sont interprétées explicitement. Toute autre valeur non reconnue reste inconnue. La correspondance reste visible et doit être confirmée ; le fichier original et toutes ses colonnes sont conservés dans l’export, avec la décision interprétée en colonne ajoutée. Une couverture documentaire complète ne valide ni le contenu ni une réponse HTTP réelle.
+
+`node tests/browser-matrix.mjs` rejoue l’import, le téléchargement et le réimport FR/EN dans Chromium et Firefox contre l’aperçu local.
+
 TypeScript sans framework. Papa Parse 5.5.3 est la seule dépendance embarquée. esbuild produit `app.js` et `worker.js`, tous deux locaux. Le moteur est indépendant du DOM. Parsing, rapprochement, graphe, résultats filtrés et exports sont exécutés dans le worker. Aucune police distante, CDN ou télémétrie.
 
 Les fichiers restent en mémoire. Ni localStorage, sessionStorage, IndexedDB, cookie applicatif ni service worker. Aucune URL importée n’est cliquable ou chargée. La remise à zéro retire les références et révoque les URL objet, sans promettre d’effacement forensique. Un téléchargement volontaire contient des données du projet.

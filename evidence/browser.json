@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-03T18:52:02.830Z",
+  "date": "2026-10-10T04:54:18.691Z",
   "os": "darwin 25.3.0",
   "node": "v22.12.0",
-  "url": "http://127.0.0.1:4179/seo-migration-review-demo/",
+  "url": "http://127.0.0.1:4182/seo-migration-review-demo/",
   "engines": [
     {
       "name": "chromium",
@@ -25,7 +25,7 @@
         "chromium-initial.png",
         "chromium-results.png"
       ],
-      "version": "154.0.8037.93",
+      "version": "155.0.8059.39",
       "axe": {
         "violations": [],
         "incomplete": [],

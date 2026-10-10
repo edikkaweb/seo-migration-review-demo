@@ -16,7 +16,18 @@ export function planRows(
       ? normalize(targetText, options.targetBase)
       : { original: targetText, key: null, fragment: "", notes: [] };
     const raw = cell(original, map, "decision").trim().toLowerCase();
-    let decision: Decision = [
+    const labels: Record<string, Decision> = {
+      conserver: "keep",
+      "rediriger 301": "redirect",
+      "301 redirect": "redirect",
+      consolider: "consolidate",
+      "404": "remove",
+      "410": "remove",
+      "à analyser": "undecided",
+      "to analyze": "undecided",
+      investigate: "undecided",
+    };
+    let decision: Decision = labels[raw] ?? ([
       "keep",
       "redirect",
       "consolidate",
@@ -26,7 +37,7 @@ export function planRows(
       ? (raw as Decision)
       : raw
         ? "unknown"
-        : "undecided";
+        : "undecided");
     let origin: PlanRow["origin"] = raw ? "explicit" : "missing";
     if (!raw && target.key && source.key) {
       if (target.key === source.key) decision = "ambiguous";

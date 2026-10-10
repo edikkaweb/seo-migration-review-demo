@@ -1,0 +1,4 @@
+﻿ID;Old URL;Discovery source;Criticality;Decision;New URL;Intent retained?;Evidence / content to retain;Expected HTTP;Observed HTTP;Expected canonical;Indexable after launch;Query parameters retained?;Owner;Due date;Status;Testing trace / notes
+1;https://example.com/old-service;EXAMPLE – crawl + analytics;Critical;301 redirect;https://example.com/new-service;Yes;"Promise, dated client evidence, author";301;301;https://example.com/new-service;Yes;Yes;Assign;;Ready for testing;Also test ?utm_source=chatgpt.com
+2;https://example.com/advice-a;EXAMPLE – sitemap;High;Consolidate;https://example.com/complete-guide;Partial;Specific answer and source links;301;;https://example.com/complete-guide;Yes;Check;Assign;;To qualify;Verify that the new page serves the original intent
+3;https://example.com/finished-operation;EXAMPLE – external link;Normal;410;;N/A;No relevant equivalent;410;;;No;N/A;Assign;;To qualify;Do not redirect to the home page

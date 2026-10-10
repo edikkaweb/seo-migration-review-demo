@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.1 — 10 octobre 2026
+
+Compatibilité des matrices publiques Edikka FR/EN : en-têtes HTTP explicites prioritaires sur le statut de travail, libellés de décision reconnus, colonnes brutes préservées et valeurs inconnues non converties. Ajout de tests moteur et navigateur pour import, export et réimport. Le corpus fictif et les règles de couverture 1.0.0 restent inchangés.
+
 ## 1.0.0 — 3 octobre 2026
 
 Première V1 française autonome. Couverture documentaire, pondération par clics connus, import CSV et correspondance par position, normalisation conservative, graphe itératif, preuves paginées, deux exports CSV sécurisés, manifeste facultatif. Corpus fictif 86 % / 31 %, état complété et corpus anomalies. HTML initial calculé au build, worker local et CSP sans connexions. Méthode 1.0.0 ; documentation 1.0.0.

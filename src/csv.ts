@@ -82,8 +82,8 @@ const aliases: Record<string, string[]> = {
     "urldestination",
   ],
   decision: ["decision", "décision"],
-  planned_status: ["plannedstatus", "statut", "status", "codehttp"],
-  reason: ["reason", "motif", "justification"],
+  planned_status: ["plannedstatus", "httpattendu", "expectedhttp", "codehttp"],
+  reason: ["reason", "motif", "justification", "preuves/contenusàreprendre", "evidence/contenttoretain"],
   url: [
     "url",
     "page",
@@ -102,11 +102,16 @@ export function suggest(
   for (const field of kind === "plan"
     ? ["source_url", "decision", "target_url", "planned_status", "reason"]
     : ["url", "clicks"]) {
-    const found = headers
+    let found = headers
       .map((h, i) =>
         aliases[field].includes(h.toLowerCase().replace(/[ _-]/g, "")) ? i : -1,
       )
       .filter((i) => i >= 0);
+    // An explicit HTTP column takes priority over a workflow Status/Statut.
+    // Retain the legacy fallback only when no specific HTTP header exists.
+    if (field === "planned_status" && found.length === 0) {
+      found = headers.map((h, i) => ["statut", "status"].includes(h.trim().toLowerCase()) ? i : -1).filter(i => i >= 0);
+    }
     out[field] = found.length === 1 ? found[0] : -1;
   }
   return out;

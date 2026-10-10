@@ -252,7 +252,7 @@ function preview(kind: string, data: any) {
             source_url: "URL source *",
             target_url: "URL destination",
             decision: "Décision",
-            planned_status: "Statut prévu",
+            planned_status: "Code HTTP prévu",
             reason: "Justification",
             url: "URL inventaire *",
             clicks: "Clics",
@@ -280,6 +280,7 @@ function preview(kind: string, data: any) {
     grid.append(wrap);
   }
   box.append(grid);
+  if (kind === "plan") box.append(node("p", "Les libellés de la matrice Edikka FR/EN sont reconnus : Conserver → keep, Rediriger 301 / 301 redirect → redirect, Consolider → consolidate, 404 / 410 → remove, À analyser / To analyze → undecided. Une autre valeur reste inconnue. Le code HTTP vient de sa colonne ; Statut / Status peut désigner l’avancement du travail. Vérifiez les correspondances. L’export conserve les colonnes originales et ajoute la décision interprétée et son origine.", "notice"));
   if (new Set(data.headers).size !== data.headers.length)
     box.append(
       node(

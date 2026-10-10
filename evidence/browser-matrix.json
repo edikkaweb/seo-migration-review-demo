@@ -1,0 +1,33 @@
+{
+  "at": "2026-10-10T04:54:29.145Z",
+  "results": [
+    {
+      "engine": "chromium",
+      "language": "fr",
+      "httpColumn": 9,
+      "rows": 3,
+      "downloadAndReimport": true
+    },
+    {
+      "engine": "chromium",
+      "language": "en",
+      "httpColumn": 9,
+      "rows": 3,
+      "downloadAndReimport": true
+    },
+    {
+      "engine": "firefox",
+      "language": "fr",
+      "httpColumn": 9,
+      "rows": 3,
+      "downloadAndReimport": true
+    },
+    {
+      "engine": "firefox",
+      "language": "en",
+      "httpColumn": 9,
+      "rows": 3,
+      "downloadAndReimport": true
+    }
+  ]
+}
